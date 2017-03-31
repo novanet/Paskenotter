@@ -1,0 +1,118 @@
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        div.jumbotron {
+            background-color: white;
+        }
+
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            width: 150px;
+        }
+        .logo-left {
+            margin-left: 28px;
+            width: 250px;
+            padding: 20px;
+            border-radius: 6%;
+        }
+
+        .logo-right {
+            margin-right: 28px;
+            width: 150px;
+            padding: 20px;
+            border-radius: 6%;
+            top: 10px;
+        }
+
+        @media screen and (min-width: 480px) {
+            .logo-left {
+                position: relative;
+                float: left;
+                left: 200px;
+                margin-left: -200px;
+            }
+        }
+
+        @media screen and (min-width: 480px) {
+            .logo-right {
+                position: relative;
+                float: right;
+                right: 200px;
+                margin-right: -200px;
+            }
+        }
+
+        .about-novanet {
+            background-color: #C8ECDF;
+        }
+
+        .about-comp {
+            background-color: #F7F396;
+        }
+
+        .well {
+            border: 0;       
+            padding-right: 20px;
+            padding-left:40px;
+            padding-top: 10px;
+            padding-bottom: 10px;     
+        }
+
+        hr {
+            height: 50px;
+            background-color: #F7F396;
+            width: 100%;
+            left: 0;
+            clear: both;
+        }
+        .table-header {
+            margin-bottom: 0;
+        }
+        .table {
+            margin-bottom:0;
+        }
+        li {
+            margin-top: 15px;
+            margin-left: 10px;
+            font-size: 2rem;
+        }
+
+        i {
+            color: green;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: bold;
+        }
+
+        h2 {
+            padding-bottom: 15px;
+        }
+
+        th {
+            background-color: #eee;
+        }
+
+        label {
+            font-weight: normal;
+        }
+        .footer {
+            background-color: #26B481; color: #83DDD6;
+        }
+        .easterbg {
+            background-color: #F7F396;
+        }
+        tbody.rebus > tr > td:nth-child(1),
+        tbody.rebus > tr > td:nth-child(2) {
+            padding-top: 16px;
+        }
