@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html en="utf-8" lang="no">
+<html en="utf-8" lang="no" ng-app="app" ng-controller="controller as vm"> 
 <head>
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
@@ -60,135 +60,9 @@
                         </tr>
                     </thead>
                     <tbody class="rebus">
-                        <tr>
-                            <td>1.</td>
-                            <td>Rebus 1</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2.</td>
-                            <td>Rebus 2</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3.</td>
-                            <td>Rebus 3</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4.</td>
-                            <td>Rebus 4</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>5.</td>
-                            <td>Rebus 5</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>6.</td>
-                            <td>Rebus 6</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>7.</td>
-                            <td>Rebus 7</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>8.</td>
-                            <td>Rebus 8</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>9.</td>
-                            <td>Rebus 9</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>10.</td>
-                            <td>Rebus 10</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>11.</td>
-                            <td>Rebus 11</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>12.</td>
-                            <td>Rebus 12</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>13.</td>
-                            <td>Rebus 13</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>14.</td>
-                            <td>Rebus 14</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>15.</td>
-                            <td>Rebus 15</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>16.</td>
-                            <td>Rebus 16</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>17.</td>
-                            <td>Rebus 17</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>18.</td>
-                            <td>Rebus 18</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>19.</td>
-                            <td>Rebus 19</td>
+                        <tr ng-repeat="nut in vm.nuts" ng-if="nut.domestic">
+                            <td>{{nut.id}}.</td>
+                            <td>{{nut.q}}</td>
                             <td>
                                 <input type="text" class="form-control">
                             </td>
@@ -201,7 +75,7 @@
         <div class="row">
             <div class="col-lg-12 well table-header">
                 <h2>Steder i utlandet</h2>            
-                <table class="table">
+                <table class="table table-responsive">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -210,156 +84,9 @@
                         </tr>
                     </thead>
                     <tbody class="rebus">
-                        <tr>
-                            <td>20.</td>
-                            <td>Rebus 20</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>21.</td>
-                            <td>Rebus 21</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>22.</td>
-                            <td>Rebus 22</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>23.</td>
-                            <td>Rebus 23</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>24.</td>
-                            <td>Rebus 24</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>25.</td>
-                            <td>Rebus 25</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>26.</td>
-                            <td>Rebus 26</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>27.</td>
-                            <td>Rebus 27</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>28.</td>
-                            <td>Rebus 28</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>29.</td>
-                            <td>Rebus 29</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>30.</td>
-                            <td>Rebus 30</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>31.</td>
-                            <td>Rebus 31</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>32.</td>
-                            <td>Rebus 32</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>33.</td>
-                            <td>Rebus 33</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>34.</td>
-                            <td>Rebus 34</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>35.</td>
-                            <td>Rebus 35</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>36.</td>
-                            <td>Rebus 36</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>37.</td>
-                            <td>Rebus 37</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>38.</td>
-                            <td>Rebus 38</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>39.</td>
-                            <td>Rebus 39</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>40.</td>
-                            <td>Rebus 40</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>41.</td>
-                            <td>Rebus 41</td>
+                        <tr ng-repeat="nut in vm.nuts" ng-if="!nut.domestic">
+                            <td>{{nut.id}}.</td>
+                            <td>{{nut.q}}</td>
                             <td>
                                 <input type="text" class="form-control">
                             </td>
@@ -428,4 +155,4 @@
 </html>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.11.1/lodash.min.js"></script>
-<!-- <script type="text/javascript" src="Angular.js"></script> -->
+<script type="text/javascript" src="angular.js"></script>
