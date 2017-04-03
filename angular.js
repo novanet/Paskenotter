@@ -17,12 +17,12 @@
         vm.isSubmitting = false;       
         vm.submit = submit;             
               
-        var answerFromCookie = $cookies.get('novaneteasterquiz');
+        var answerFromCookie = $cookies.getObject('novaneteasterquiz');
         if(answerFromCookie)
             vm.answer = answerFromCookie; 
 
         $scope.$watchCollection('vm.answer', function() { 
-            $cookies.put('novaneteasterquiz', vm.answer, { expires: new Date(2017, 5, 1) });
+            $cookies.putObject('novaneteasterquiz', vm.answer, { expires: new Date(2017, 5, 1) });
          });            
 
         function submit(){
