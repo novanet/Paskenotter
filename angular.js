@@ -18,8 +18,8 @@
         vm.submit = submit;             
               
         function submit(){
-            if(!vm.answer.name || !vm.answer.email || !vm.answer.company){
-                vm.error = "Du må fylle ut navn, epost og firma";
+            if(!vm.answer.name || !vm.answer.email || !vm.answer.company || vm.answer.email.indexOf('@') === -1){
+                vm.error = "Du må fylle ut navn, gyldig epost og firma";
                 return;
             }                               
             
