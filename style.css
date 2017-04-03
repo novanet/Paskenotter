@@ -81,4 +81,8 @@
   .web {
     display: none !important;
   }
+
+  div.form-group{
+        page-break-inside: avoid;
+    }
 }
