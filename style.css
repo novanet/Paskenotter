@@ -76,3 +76,13 @@
             font-size:16px;
         }
         hr {margin: 0;}
+
+@media print {
+  .web {
+    display: none !important;
+  }
+
+  div.form-group{
+        page-break-inside: avoid;
+    }
+}

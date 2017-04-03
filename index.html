@@ -27,7 +27,7 @@
                 </ul>
 
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 web">
                 <br>
                 <br>
                 <img class="pull-right" width="100%" src="switch.jpg">
@@ -424,14 +424,14 @@
                 </div>
             </div>
         </div>              
-        <div class="row" ng-if="vm.hasAnswered" ng-cloak>
+        <div class="web row" ng-if="vm.hasAnswered" ng-cloak>
             <div class="col-lg-6 col-lg-offset-3 text-center">
                 <h3><i class="fa fa-check fa-2x" style="color:green;padding-right:10px;"></i>Svaret er levert</h3>
                 <br>
                 Man kan svare flere ganger, det er det siste svaret som gjelder.
             </div>
         </div>
-        <div class="row" ng-if="!vm.hasAnswered" ng-cloak>
+        <div class="web row" ng-if="!vm.hasAnswered" ng-cloak>
             <div class="col-lg-12 text-center" style="padding:40px;">                
                 <a class="btn btn-primary btn-lg" ng-click="vm.submit()" ng-disabled="vm.isSubmitting">
                     <span ng-if="!vm.isSubmitting">Send inn svar</span>
