@@ -2,14 +2,14 @@
     'use strict';
 
     angular
-        .module('app', [])
+        .module('app', ['ngCookies'])
         .controller('controller', controller)
         .factory('dataservice', dataservice);
 
-    controller.$inject = ['dataservice'];
+    controller.$inject = ['$scope', 'dataservice', '$cookies'];
     dataservice.$inject = ['$q', '$http'];
 
-    function controller(dataservice) {
+    function controller($scope, dataservice, $cookies) {
         var vm = this;
         vm.answer = {};
         vm.error = null;
@@ -17,6 +17,14 @@
         vm.isSubmitting = false;       
         vm.submit = submit;             
               
+        var answerFromCookie = $cookies.get('novaneteasterquiz');
+        if(answerFromCookie)
+            vm.answer = answerFromCookie; 
+
+        $scope.$watchCollection('vm.answer', function() { 
+            $cookies.put('novaneteasterquiz', vm.answer, { expires: new Date(2017, 5, 1) });
+         });            
+
         function submit(){
             if(!vm.answer.name || !vm.answer.email || !vm.answer.company || vm.answer.email.indexOf('@') === -1){
                 vm.error = "Du må fylle ut navn, gyldig epost og firma";
