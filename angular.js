@@ -22,7 +22,7 @@
             vm.answer = answerFromCookie; 
 
         $scope.$watchCollection('vm.answer', function() { 
-            $cookies.putObject('novaneteasterquiz', vm.answer, { expires: new Date(2017, 5, 1) });
+           // $cookies.putObject('novaneteasterquiz', vm.answer, { expires: new Date(2017, 5, 1) });
          });            
 
         function submit(){
