@@ -43,11 +43,7 @@
                 Svar og vinner publiserer på <a href="http://www.novanet.no">Novanet.no</a>. Vinneren trekkes fra de som har flest riktige svar<br><br>
                 <strong>Svarfrist er 17.april (kl. 23:59)</strong>
                 <br class="web-only">
-                <br class="web-only">
-                <div class="text-center web-only">
-                    <a class="btn btn-default btn-lg web-only" onclick="javascript: window.print()">Skriv ut og ta med på hytta</a>
-                    <br class="web-only">
-                </div>  
+                <br class="web-only">               
             </div>           
             
         </div>    
@@ -436,13 +432,16 @@
             </div>
         </div>
         <div class="row web-only" ng-if="!vm.hasAnswered" ng-cloak>
-            <div class="col-lg-12 text-center" style="padding:40px;">                        
+            <div class="col-lg-12 text-center" style="padding:40px;">   
+                <a class="btn btn-default btn-lg web-only" onclick="javascript: window.print()"><i class="fa fa-print"></i>&nbsp;&nbsp;Skriv ut</a>   
+                &nbsp;&nbsp;                
                 <a class="btn btn-primary btn-lg" ng-click="vm.submit()" ng-disabled="vm.isSubmitting">
                     <span ng-if="!vm.isSubmitting">Send inn svar</span>
                     <span ng-if="vm.isSubmitting"><i class="fa fa-circle-o-notch fa-spin fa-fw" style="color:white;"></i></span>
                     </a>
                 <br><br>
-                <h5>Man kan sende inn flere ganger, det er siste innsendte svar som teller</h5>                
+                <h5>Man kan sende inn flere ganger, det er siste innsendte svar som teller</h5>
+                </div>       
             </div>
         </div>
     </div>
