@@ -10,6 +10,12 @@
             margin: 25mm 25mm 25mm 25mm;  
         } 
 
+        @media print {
+            .web-only {
+                display: none !important;
+            }
+        }
+
         body {
             background-color: white;
         }
