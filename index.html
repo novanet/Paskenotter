@@ -1,8 +1,6 @@
 ﻿<!doctype html>
 <html en="utf-8" lang="no" ng-app="app" ng-controller="controller as vm"> 
-<head>
-    <meta name="robots" content="noindex">
-    <meta name="googlebot" content="noindex">
+<head>    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Novanet påskenøtter 2017</title>
@@ -50,49 +48,345 @@
         <br> 
         <div class="row">
             <div class="col-lg-12 well table-header">
-                <h2>Steder i Norge</h2>                
-                <table class="table">
-                    <thead>                        
-                        <tr>
-                            <th>#</th>
-                            <th>Rebus</th>
-                            <th>Svar</th>
-                        </tr>
-                    </thead>
-                    <tbody class="rebus">
-                        <tr ng-repeat="nut in vm.nuts" ng-if="nut.domestic">
-                            <td>{{nut.id}}.</td>
-                            <td>{{nut.q}}</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h2>Steder i Norge</h2>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            1. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q1" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            2. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q2" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            3. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q3" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            4. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q4" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            5. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q5" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            6. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q6" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            7. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q7" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            8. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q8" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            9. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q9" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            10. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q10" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            11. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q11" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            12. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q12" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            13. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q13" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            14. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q14" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            15. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q15" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            16. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q16" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            17. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q17" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            18. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q18" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            19. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q19" maxlength="100">
+                        </div>
+                    </div>                   
+                </form>
             </div>
         </div>
         <br><br>
         <div class="row">
-            <div class="col-lg-12 well table-header">
-                <h2>Steder i utlandet</h2>            
-                <table class="table table-responsive">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Rebus</th>
-                            <th>Svar</th>
-                        </tr>
-                    </thead>
-                    <tbody class="rebus">
-                        <tr ng-repeat="nut in vm.nuts" ng-if="!nut.domestic">
-                            <td>{{nut.id}}.</td>
-                            <td>{{nut.q}}</td>
-                            <td>
-                                <input type="text" class="form-control">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-lg-12 well">
+                <h2>Steder i utlandet</h2>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            20. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q20" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            21. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q21" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            22. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q22" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            23. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q23" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            24. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q24" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            25. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q25" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            26. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q26" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            27. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q27" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            28. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q28" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            29. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q29" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            30. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q30" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            31. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q31" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            32. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q32" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            33. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q33" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            34. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q34" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            35. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q35" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            36. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q36" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            37. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q37" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            38. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q38" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            39. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q39" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            40. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q40" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-3 col-lg-offset-1 text-left question">
+                            41. Rebus X
+                        </div>
+                        <div class="col-lg-4 col-sm-11 col-xs-11">
+                            <input type="text" class="form-control" ng-model="vm.answer.q41" maxlength="100">
+                        </div>
+                    </div>                   
+                </form>          
             </div>
         </div>
         <br><br>
@@ -107,20 +401,20 @@
                     <form class="form-horizontal">
                         <div class="form-group">
                             <label for="inpName" class="col-sm-2 control-label">Navn</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inpName">
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inpName" ng-model="vm.answer.name" maxlength="100">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inpEmail" class="col-sm-2 control-label">Epost</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inpEmail">
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inpEmail" ng-model="vm.answer.email" maxlength="100">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inpCompany" class="col-sm-2 control-label">Firma</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inpCompany">
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inpCompany" ng-model="vm.answer.company" maxlength="100">
                             </div>
                         </div>
                     </form>
@@ -128,16 +422,29 @@
                 </div>
             </div>
         </div>              
-        <div class="row">
-            <div class="col-lg-12 text-center" style="padding:40px;">                
-                <a class="btn btn-primary btn-lg">Send inn svar</a>
-                <br><br>
-                <h5>Man kan sende inn flere ganger, det er siste innsendte svar som teller</h5>
+        <div class="row" ng-if="vm.hasAnswered" ng-cloak>
+            <div class="col-lg-6 col-lg-offset-3 text-center">
+                <h3><i class="fa fa-check fa-2x" style="color:green;padding-right:10px;"></i>Svaret er levert</h3>
                 <br>
+                Man kan svare flere ganger, det er det siste svaret som gjelder.
+            </div>
+        </div>
+        <div class="row" ng-if="!vm.hasAnswered" ng-cloak>
+            <div class="col-lg-12 text-center" style="padding:40px;">                
+                <a class="btn btn-primary btn-lg" ng-click="vm.submit()" ng-disabled="vm.isSubmitting">
+                    <span ng-if="!vm.isSubmitting">Send inn svar</span>
+                    <span ng-if="vm.isSubmitting"><i class="fa fa-circle-o-notch fa-spin fa-fw" style="color:white;"></i></span>
+                    </a>
+                <br><br>
+                <h5>Man kan sende inn flere ganger, det er siste innsendte svar som teller</h5>                
             </div>
         </div>
     </div>
-    <div class="row well table-header footer text-center" style="margin-left:0; margin-right:0;>
+    <div class="row" ng-if="vm.error" ng-cloak >
+        <div class="col-lg-6 col-lg-offset-3 alert alert-danger text-center">{{vm.error}}</div>
+    </div>
+    <br>
+    <div class="row well table-header footer text-center" style="margin-left:0; margin-right:0;">
         <div class="col-lg-12 text-center">
             <br>
             <h2>Synes du dette var morsomt?</h2>            
