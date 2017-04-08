@@ -47,14 +47,14 @@
         } 
     }
 
-    function dataservice($q, $https) {
+    function dataservice($q, $http) {
         return {
             post : post   
         }
       
         function post(data) {
             return $q(function (resolve, reject) {
-                $https.post('https://easterquiz-api.azurewebsites.net/api/answers', data)
+                $http.post('http://easterquiz-api.azurewebsites.net/api/answers', data)
                     .then(saveComplete)
                     .catch(saveFailed);
 
