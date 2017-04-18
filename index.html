@@ -1,18 +1,17 @@
-﻿<!doctype html>
-<html en="utf-8" lang="no" ng-app="app" ng-controller="controller as vm"> 
+<!doctype html>
+<html en="utf-8" lang="no"> 
 <head>    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Novanet påskenøtter 2017</title>    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="row" style="padding: 40px;">
-            <div class="col-lg-6">
+            <div class="col-lg-5 col-lg-offset-1">
                 <br class="web-only">
                 <br class="web-only">
                 <br class="web-only">
@@ -30,424 +29,80 @@
                 <br>
                 <br>
                 <img class="pull-right" width="100%" src="switch.jpg">
-                <br>
             </div>
         </div>
-        <br class="web-only">
-        <div class="row">
-            <div class="col-lg-12 well easterbg">
-                <h2>Hvordan fungerer det?</h2>
-                Konkurransen går ut på å gjette seg frem til steder basert på en rekke rebuser. Her gjelder det å være kreativ! <br><br>
-                Eksempel på rebus: "Ikke stor bekk", der svaret er "Lillestrøm".<br><br>
-                Man kan svare flere ganger, det er siste svar som teller.<br><br>
-                Svar og vinner publiseres på <a href="http://www.novanet.no">Novanet.no</a>. Vinneren trekkes fra de som har flest riktige svar<br><br>
-                <strong>Svarfrist er 17.april (kl. 23:59)</strong>
-                <br class="web-only">
-                <br class="web-only">               
-            </div>           
-            
-        </div>    
-        <br class="web-only">
-        <div class="row">
-            <div class="col-lg-12 well table-header">
-                <h2>Steder i Norge</h2>
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            1. Telefonkiosk
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q1" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            2. 3 stuer, 2 bad, 1 kjøkken og 5 soverom
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q2" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            3. Giskes hus
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q3" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            4. Nyvasket bokstav
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q4" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            5. Telefonen på lydløs
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q5" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            6. Slik tilbragte Jesus påska
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q6" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            7. Egenvillig IT-konsulentfirma
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q7" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            8. Hvordan unngå White Walkers (Game of Thrones)
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q8" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            9. Utenfor herretoalettet
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q9" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            10. Teit oppbevaring av dyr
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q10" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            11. Senterpartiets partiprogram
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q11" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            12. Deilig nødsignal
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q12" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            13. Farget skryt
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q13" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            14. Et slott fylt av grunnstoff
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q14" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            15. Snakk opp et ølmerke
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q15" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            16. Mannlig fylleangst
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q16" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            17. Beregn på egen hånd
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q17" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            18. Eie et dårlig nabolag
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q18" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            19. Hellig bokstavsammensetning
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q19" maxlength="100">
-                        </div>
-                    </div>                   
-                </form>
-            </div>
-        </div>              
-        <br><br>
-        <div class="row">
-            <div class="col-lg-12 well">
-                <h2>Steder i utlandet</h2>
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            20. Spør et stoff
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q20" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            21. Hvor er hun? på trøndersk
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q21" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            22. Jerry&Tom
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q22" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            23. Tannstranden
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q23" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            24. Moro på toalettet
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q24" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            25. Nødfartøy (engelsk) + Pokemon + Hotellkjede
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q25" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            26. Kar i Los Angeles
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q26" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            27. Stille i havna
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q27" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            28. Et over snittet dørslag
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q28" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            29. Dessert for to
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q29" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            30. Kostnad + Kiwikokk
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q30" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            31. Annenrangs avgangselev + strøm
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q31" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            32. Maskulint utrop
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q32" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            33. Kameldyr vasker seg i kaldt vann
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q33" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            34. Gjorde vondt + målenhet
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q34" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            35. Positivt instrument
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q35" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            36. Oksebil
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q36" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            37. Alltid seier med i
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q37" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            38. Hva skal vi lage stappe av?
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q38" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            39. Travløptype på film
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q39" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            40. Albino
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q40" maxlength="100">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-5 col-lg-offset-1 text-left question">
-                            41. Doven mellompassering
-                        </div>
-                        <div class="col-lg-4 col-sm-11 col-xs-11 web-only">
-                            <input type="text" class="form-control" ng-model="vm.answer.q41" maxlength="100">
-                        </div>
-                    </div>                   
-                </form>          
-            </div>
-        </div>
-        <br><br>
-           <div class="row web-only">
-            <div class="col-lg-12 well">
-               <div class="text-center">
-                <h2>Hvem er du?</h2>
-                <h5>Påkrevd - slik at vi vet hvor vi skal sende premien</h5>
-                <br>
-                </div>
-                <div class="col-lg-6 col-lg-offset-3">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="inpName" class="col-sm-2 control-label">Navn</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inpName" ng-model="vm.answer.name" maxlength="100">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inpEmail" class="col-sm-2 control-label">Epost</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inpEmail" ng-model="vm.answer.email" maxlength="100">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inpCompany" class="col-sm-2 control-label">Firma</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inpCompany" ng-model="vm.answer.company" maxlength="100">
-                            </div>
-                        </div>
-                    </form>
-                    <br>
-                </div>
-            </div>
-        </div>              
-        <div class="row" ng-if="vm.hasAnswered" ng-cloak>
-            <div class="col-lg-6 col-lg-offset-3 text-center">
-                <h3><i class="fa fa-check fa-2x" style="color:green;padding-right:10px;"></i>Svaret er levert</h3>
-                <br>
-                Man kan svare flere ganger, det er det siste svaret som gjelder.
-            </div>
-        </div>
-        <div class="row web-only" ng-if="!vm.hasAnswered" ng-cloak>
-            <div class="col-lg-12 text-center" style="padding:40px;">   
-                <a class="btn btn-default btn-lg web-only" onclick="javascript: window.print()"><i class="fa fa-print"></i>&nbsp;&nbsp;Skriv ut</a>   
-                &nbsp;&nbsp;                
-                <a class="btn btn-primary btn-lg" ng-click="vm.submit()" ng-disabled="vm.isSubmitting">
-                    <span ng-if="!vm.isSubmitting">Send inn svar</span>
-                    <span ng-if="vm.isSubmitting"><i class="fa fa-circle-o-notch fa-spin fa-fw" style="color:white;"></i></span>
-                    </a>
-                <br><br>
-                <h5>Man kan sende inn flere ganger, det er siste innsendte svar som teller</h5>
-                </div>       
-            </div>
-        </div>
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h1>Vinner</h1>
+				<span style="font-size: 2rem">Det var fire personer som klarte alle påskenøttene.
+				<br>
+				Av disse ble <strong>Halvor Brunvoll Engebakken</strong> (Gol barneskule) trukket som vinner av en Nintendo Switch!
+				<br><br>
+				<strong>Novanet gratulerer!</strong>
+							</span>
+				<br>
+				<br>
+				<h1>Fasit</h1>
+				<br>
+				<table class="table table-hover">
+					<thead style="background-color: #eee">	
+						<tr>
+							<th>#</th>
+							<th>Nøtt</th>
+							<th>Svar</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="background-color: #FCFAEB"><td colspan="3">Steder i Norge</td></tr>
+						<tr><td>1</td><td>Telefonkiosk</td><td>Ringebu</td></tr>
+						<tr><td>2</td><td>3 stuer, 2 bad, 1 kjøkken og 5 soverom</td><td>Elverum</td></tr>
+						<tr><td>3</td><td>Giskes hus</td><td>Trondheim</td></tr>
+						<tr><td>4</td><td>Nyvasket bokstav</td><td>Rena</td></tr>
+						<tr><td>5</td><td>Telefonen på lydløs</td><td>Ringerike</td></tr>
+						<tr><td>6</td><td>Slik tilbragte Jesus påska</td><td>Vardø, Grav</td></tr>
+						<tr><td>7</td><td>Egenvillig IT-konsulentfirma</td><td>Stabekk</td></tr>
+						<tr><td>8</td><td>Hvordan unngå White Walkers (Game of Thrones)</td><td>Risør, Sørreisa</td></tr>
+						<tr><td>9</td><td>Utenfor herretoalettet</td><td>Hankø</td></tr>
+						<tr><td>10</td><td>Teit oppbevaring av dyr</td><td>Dombås</td></tr>
+						<tr><td>11</td><td>Senterpartiets partiprogram</td><td>Meråker</td></tr>
+						<tr><td>12</td><td>Deilig nødsignal</td><td>Namsos</td></tr>
+						<tr><td>13</td><td>Farget skryt</td><td>Røros</td></tr>
+						<tr><td>14</td><td>Et slott fylt av grunnstoff</td><td>Uranienborg</td></tr>
+						<tr><td>15</td><td>Snakk opp et ølmerke</td><td>Rosenborg, Rosendal</td></tr>
+						<tr><td>16</td><td>Mannlig fylleangst</td><td>Stavanger, Geiranger, Hardanger</td></tr>
+						<tr><td>17</td><td>Beregn på egen hånd</td><td>Målselv</td></tr>
+						<tr><td>18</td><td>Eie et dårlig nabolag</td><td>Haslum</td></tr>
+						<tr><td>19</td><td>Hellig bokstavsammensetning</td><td>Stord</td></tr>
+						<tr style="background-color: #FCFAEB"><td colspan="3">Steder i utlandet</td></tr>
+						<tr><td>20</td><td>Spør et stoff</td><td>Berlin</td></tr>
+						<tr><td>21</td><td>Hvor er hun? på trøndersk</td><td>Korea</td></tr>
+						<tr><td>22</td><td>Jerry&Tom</td><td>Muskat</td></tr>
+						<tr><td>23</td><td>Tannstranden</td><td>Elfenbenkysten</td></tr>
+						<tr><td>24</td><td>Moro på toalettet</td><td>Doha</td></tr>
+						<tr><td>25</td><td>Nødfartøy (engelsk) + Pokemon + Hotellkjede</td><td>Podgorica</td></tr>
+						<tr><td>26</td><td>Kar i Los Angeles</td><td>Manila</td></tr>
+						<tr><td>27</td><td>Stille i havna</td><td>Kairo, Fredrikshavn</td></tr>
+						<tr><td>28</td><td>Et over snittet dørslag</td><td>Brasil</td></tr>
+						<tr><td>29</td><td>Dessert for to</td><td>Paris</td></tr>
+						<tr><td>30</td><td>Kostnad + Kiwikokk</td><td>Pristina</td></tr>
+						<tr><td>31</td><td>Annenrangs avgangselev + strøm</td><td>Brussel</td></tr>
+						<tr><td>32</td><td>Maskulint utrop</td><td>Hanoi</td></tr>
+						<tr><td>33</td><td>Kameldyr vasker seg i kaldt vann</td><td>Islamabad</td></tr>
+						<tr><td>34</td><td>Gjorde vondt + målenhet</td><td>Sveits</td></tr>
+						<tr><td>35</td><td>Positivt instrument</td><td>Japan</td></tr>
+						<tr><td>36</td><td>Oksebil</td><td>Tyrkia</td></tr>
+						<tr><td>37</td><td>Alltid seier med i</td><td>Taipei (Tapei + i)</td></tr>
+						<tr><td>38</td><td>Hva skal vi lage stappe av?</td><td>Moskva</td></tr>
+						<tr><td>39</td><td>Travløptype på film</td><td>Montevideo</td></tr>
+						<tr><td>40</td><td>Albino</td><td>Brunei</td></tr>
+						<tr><td>41</td><td>Doven mellompassering</td><td>Latvia</td></tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
     </div>
-    <div class="row" ng-if="vm.error" ng-cloak >
-        <div class="col-lg-6 col-lg-offset-3 alert alert-danger text-center">{{vm.error}}</div>
-    </div>
+  
     <br>
     <div class="row well table-header footer text-center" style="margin-left:0; margin-right:0;">
         <div class="col-lg-6 col-lg-offset-3 text-center">
@@ -479,7 +134,3 @@
 </script>
 </body>
 </html>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.11.1/lodash.min.js"></script>
-<script type="text/javascript" src="angular.js"></script>
